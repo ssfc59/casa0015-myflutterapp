@@ -1,5 +1,5 @@
 name: s
-description: A new Flutter project.
+description: My sunset forecast app.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   english_words: ^4.0.0   
   hexcolor: ^3.0.1
+  google_fonts: ^4.0.3
   
 
 dev_dependencies:
@@ -92,3 +93,4 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
