@@ -33,14 +33,12 @@ class FirstRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("Today's Sunset Forecast",
-              style: GoogleFonts.workSans( 
-                 textStyle: TextStyle(
+          title: Text("Today's Sunrise Forecast",
+              style: GoogleFonts.workSans(
+                  textStyle: TextStyle(
                 fontSize: 30.0,
                 color: HexColor("fddec5"),
-              )
-              ) 
-              ),
+              ))),
           backgroundColor: HexColor("8a94f9"),
         ),
         body: GestureDetector(
@@ -62,12 +60,17 @@ class FirstRoute extends StatelessWidget {
                     ],
                   )),
                   child: Center(
-                    child: Container(
+                    child: Card(
+                        elevation: 20.0,
+                        //shadowColor: HexColor("ffd837"),
+                        shadowColor: Color.fromARGB(255, 233, 88, 4),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(110.0)),
                         child: CircleAvatar(
                             backgroundColor: HexColor("fd9f6f"),
-                            radius: 110,
+                            radius: 110.0,
                             child: Center(
-                                child: Text('6:59 PM',
+                                child: Text('6:59 AM',
                                     style: GoogleFonts.nabla(
                                       textStyle: TextStyle(
                                         fontSize: 50.0,
@@ -90,10 +93,76 @@ class SecondRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text("Second Route"),
+          title: Text("Sunset Forecast",
+              style: GoogleFonts.workSans(
+                  textStyle: TextStyle(
+                fontSize: 30.0,
+                color: HexColor("fddec5"),
+              ))),
+          backgroundColor: HexColor("8a94f9"),
         ),
         body: GestureDetector(
-            child: const Center(child: Text('Second Route')),
+            child: Center(
+              child: Container(
+                  decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomLeft,
+                    stops: const [
+                      0.1,
+                      0.5,
+                      0.99,
+                    ],
+                    colors: [
+                      HexColor("8a94f9"),
+                      HexColor("eaae99"),
+                      HexColor("febb5b"),
+                    ],
+                  )),
+                  child: Center(
+                    child: Card(
+                        elevation: 20.0,
+                        //shadowColor: HexColor("ffd837"),
+                        shadowColor: Color.fromARGB(255, 255, 94, 0),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: new BorderRadius.circular(110.0)),
+                        child: SizedBox(
+                          width: 220.0,
+                          height: 220.0,
+                          child: FittedBox(
+                            child: FloatingActionButton(
+                              onPressed: () {},
+
+                              child: Container(                              
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  gradient: LinearGradient(
+                                    begin: Alignment.topLeft,
+                                    end: Alignment.bottomLeft,
+                                    colors: [
+                                      HexColor("fd9f6f"),
+                                      HexColor("fea729")
+                                    ],
+                                  ),
+                                ),
+                                child: Center( 
+                                  child: Text('6:59 PM',
+                                    style: GoogleFonts.nabla(
+                                      textStyle: TextStyle(
+                                        fontSize: 12.0,
+                                        fontWeight: FontWeight.bold,
+                                        color: HexColor("ffffff"),
+                                      ),
+                                    )),
+                                  )
+                              ),
+                            
+                            ),
+                          ),
+                        )),
+                  )
+                  ),
+            ),
             onTap: () {
               Navigator.pushNamed(context, 'third');
             }));
