@@ -23,7 +23,8 @@ Include a section that gives intructions on how to install the app or run it in 
 ## Landing Page
  [![Go to site](https://user-images.githubusercontent.com/114293506/234271489-d4307fe6-b939-4e48-938b-7d12da5fab7c.png)]( https://sunscope.uncody.site/)
 
-##Declaration of Authorship
+## Declaration of Authorship
+
 I, Sophia Chong, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
 
 Sophia Chong 25/4/2023
