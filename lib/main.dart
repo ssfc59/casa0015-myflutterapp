@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Sunset Time App',
+      title: 'Sunscope App',
       initialRoute: 'MyWidget',
       routes: {
         'MyWidget': (context) => MyWidget(),
