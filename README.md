@@ -20,6 +20,11 @@ Its functions are simple and reminiscent of a real life sunset because it aims t
 
 Include a section that gives intructions on how to install the app or run it in Flutter.  What versions of the plugins are you assuming?  Maybe define a licence
 
-##  Contact Details
+## Landing Page
+ [![Go to site](https://user-images.githubusercontent.com/114293506/234271489-d4307fe6-b939-4e48-938b-7d12da5fab7c.png)]( https://sunscope.uncody.site/)
 
-Having Contact Details is also good as it shows people how to get in contact with you if they'd like to contribute to the app. 
+##Declaration of Authorship
+I, Sophia Chong, confirm that the work presented in this assessment is my own. Where information has been derived from other sources, I confirm that this has been indicated in the work.
+
+Sophia Chong 25/4/2023
+
