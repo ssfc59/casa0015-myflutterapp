@@ -1,18 +1,20 @@
-# REPLACE WITH YOUR APP NAME
+# SunScope
 
-This is the Final assessment template for CASA0014 - Please use this template and edit the relevant sections to personalise.
-This section has a short introduction to what the application is
 
-## Use this README File 
 
-Use this section to show us what your Mobile App is about.   Include a Screenshot to the App, link to the various frameworks you've used. Include your presentation video here that shows off your Mobile App.   Emojis are also fun to include 📱 😄
+## Sunscope: Sunrise and Sunset Forecast App
+![image4444](https://user-images.githubusercontent.com/114293506/234267386-c36f90ba-0fa4-4570-b060-312057696f0c.png)
+![imagessunset](https://user-images.githubusercontent.com/114293506/234267556-0ce67368-4e7f-4dbc-abee-8529aa602735.png)
 
-Look at some other Flutter Apps online and see how they use there README File.  Good examples are:
 
-- https://github.com/miickel/flutter_particle_clock
-- https://github.com/Tarikul711/flutter-food-delivery-app-ui    
-- https://github.com/mohak1283/Instagram-Clone
+This is an Android App that displays the daily sunrise and sunset times in your area on a simple and calming interface. 
 
+## Background
+As we spend more and more of our waking moments surrounded by our devices, it's easy to miss the natural beauty of the sunrise and sunset that happen every day. Knowing the daily sunrise and sunset times can help you make the most of your day, and taking a moment to appreciate this natural phenonemon boosts mood, reduces stress, and helps you find daily moments of inspiration admist the hubbub of everyday life. This app gives users a straightforward and relaxing interface to obtain the daily sunrise and sunset times so they can make the most of their day and get the countless health benefits of watching these daily phenomena.
+
+## Functions
+Shows the daily sunrise and sunset times obtained from the API **sunrisesunset.io**, on two separate pages. The sunrise and sunset times are displayed in the middle of a circular "Sun" widget. Users can tap anywhere on the screen on either page to change page.
+Its functions are simple and reminiscent of a real life sunset because it aims to inspire users to appreciate natural beauty instead of looking at their phone.
 
 ## Include A Section That Tells Developers How To Install The App
 
