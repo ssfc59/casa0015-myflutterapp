@@ -55,7 +55,7 @@ class _MyWidgetState extends State<MyWidget> {
             style: GoogleFonts.workSans(
                 textStyle: TextStyle(
               fontSize: 25.0,
-              color: HexColor("fddec5"), //fddec5
+              color: HexColor("fddec5"), 
             ))),
         backgroundColor: HexColor("8a94f9"),
       ),
@@ -94,7 +94,7 @@ class _MyWidgetState extends State<MyWidget> {
                                 style: GoogleFonts.workSans(
                                     textStyle: TextStyle(
                                   fontSize: 26.0,
-                                  color: HexColor("8167ff"), //fddec5
+                                  color: HexColor("8167ff"), 
                                 ))),
                           ),
                         ),
@@ -103,13 +103,12 @@ class _MyWidgetState extends State<MyWidget> {
                         aspectRatio: 1.5,
                         child: FutureBuilder<Map<String, dynamic>>(
                           future: getData(),
-                          builder: (BuildContext context,
-                              AsyncSnapshot snapshot) {
+                          builder:
+                              (BuildContext context, AsyncSnapshot snapshot) {
                             if (snapshot.hasData && snapshot.data != null) {
                               String? sunset =
                                   snapshot.data?['results']['sunset'];
-                              String? firstFourChars =
-                                  sunset?.substring(0, 4);
+                              String? firstFourChars = sunset?.substring(0, 4);
                               String? sunsetWithPM = '$firstFourChars PM';
                               return Center(
                                   child: SizedBox(
@@ -142,7 +141,8 @@ class _MyWidgetState extends State<MyWidget> {
                                                       fontSize: 12.0,
                                                       fontWeight:
                                                           FontWeight.bold,
-                                                   color: Colors.white.withOpacity(0.8),
+                                                      color: Colors.white
+                                                          .withOpacity(0.8),
                                                     ),
                                                   ),
                                                 ),
@@ -169,7 +169,7 @@ class _MyWidgetState extends State<MyWidget> {
                           child: Center(
                             child: Text('Quality: 78%',
                                 style: GoogleFonts.workSans(
-                                    textStyle: TextStyle(
+                                    textStyle: TextStyle(                                   
                                   fontSize: 26.0,
                                   color: HexColor("ffffff"), //fddec5
                                 ))),
@@ -180,13 +180,27 @@ class _MyWidgetState extends State<MyWidget> {
                       AspectRatio(
                         aspectRatio: 10,
                         child: Container(
-                          //padding: EdgeInsets.all(5.0),
                           decoration: BoxDecoration(),
                           child: Center(
                             child: Text('Great Quality!',
                                 style: GoogleFonts.workSans(
-                                    textStyle: TextStyle(
+                                    textStyle: TextStyle(                                     
                                   fontSize: 26.0,
+                                  color: HexColor("ffffff"), //fddec5
+                                ))),
+                          ),
+                        ),
+                      ),
+                       const SizedBox(height: 20.0),
+                      AspectRatio(
+                        aspectRatio: 10,
+                        child: Container(
+                          decoration: BoxDecoration(),
+                          child: Center(
+                            child: Text('powered by sunrisesunset.io',
+                                style: GoogleFonts.workSans(
+                                    textStyle: TextStyle(                                     
+                                  fontSize: 12.0,
                                   color: HexColor("ffffff"), //fddec5
                                 ))),
                           ),
@@ -273,9 +287,7 @@ class _MySecondRouteState extends State<SecondRoute> {
                               child: Center(
                                 child: Text("Today's sunrise forecast:",
                                     style: GoogleFonts.workSans(
-                                      
                                         textStyle: TextStyle(
-                                          
                                       fontSize: 26.0,
                                       color: HexColor("e67747"), //fddec5
                                     ))),
@@ -326,7 +338,8 @@ class _MySecondRouteState extends State<SecondRoute> {
                                                           fontSize: 12.0,
                                                           fontWeight:
                                                               FontWeight.bold,
-                                                           color: Colors.white.withOpacity(0.8),
+                                                          color: Colors.white
+                                                              .withOpacity(0.8),
                                                         ),
                                                       ),
                                                     ),
@@ -344,7 +357,7 @@ class _MySecondRouteState extends State<SecondRoute> {
                                 }
                               },
                             ),
-                          ), 
+                          ),
                           const SizedBox(height: 20.0),
                           AspectRatio(
                             aspectRatio: 10,
@@ -375,6 +388,21 @@ class _MySecondRouteState extends State<SecondRoute> {
                               ),
                             ),
                           ),
+                          const SizedBox(height: 20.0),
+                      AspectRatio(
+                        aspectRatio: 10,
+                        child: Container(
+                          decoration: BoxDecoration(),
+                          child: Center(
+                            child: Text('powered by sunrisesunset.io',
+                                style: GoogleFonts.workSans(
+                                    textStyle: TextStyle(                                     
+                                  fontSize: 12.0,
+                                  color: HexColor("ffffff"), //fddec5
+                                ))),
+                          ),
+                        ),
+                      ),
                         ],
                       ),
                     ),
